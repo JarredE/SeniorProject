@@ -3,7 +3,7 @@
   background-color: #333;
   overflow: hidden;
   text-align:center;
-  
+
 }
 
 /* Style the links inside the navigation bar */
@@ -16,7 +16,7 @@
   font-size: 17px;
   right: 50%;
   left: 50%;
- 
+
 }
 
 /* Change the color of links on hover */
@@ -34,4 +34,23 @@
 /* body of the page */
 body{
 background-color: lightgrey;
+}
+
+table, tr,td{
+text-align: center;
+font-size: 40px;
+margin-left: auto;
+margin-right: auto;
+border: 1px solid black;
+border-collapse: collapse;
+font-weight: bold;
+padding: 5px;
+}
+
+#filterItem{
+  margin: auto;
+   width: 50%;
+   border: 3px solid black;
+   padding: 5px;
+
 }
