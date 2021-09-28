@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>Refer A Student</title>
+<script src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+<h1 style="background-color:#86c341;"><p style="font-family:Courier; color:White; font-size: 20px;">(904)226-3931</p></h1>
+    <a href="#home" class="w3-bar-item w3-button"><b>The</b> Giving Cloest Project</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Refer A Student</a>
+      <a href="#about" class="w3-bar-item w3-button">About Us</a>
+      <a href="#contact" class="w3-bar-item w3-button">Programs</a>
+      <a href="#contact" class="w3-bar-item w3-button">Volunteer</a>
+      <a href="#contact" class="w3-bar-item w3-button">Sponsors</a>
+      <a href="#contact" class="w3-bar-item w3-button">Donate</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
+</header>
+
+
+
+<div class="" style="display: flex; justify-content: center; align-items: center; height: 500px ; margin-left:40%; margin-right:50%;" >
+<!-- End page content -->
+<form class="information">
+  <!-- input information -->
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required>
+
+  <input type="radio" id="male" name="selection" value="Male">
+ <label for="html">Male</label><br>
+
+ <input type="radio" id="female" name="selection" value="Female">
+ <label for="css">Female</label>
+</form>
+</div>
+
+<div class="SUBMIT" style="margin-left:40%; margin-right:50%; height: 200px;">
+<input type="submit" value="Submit" onclick="start()">
+</div>
+
+</body>
+</html>
