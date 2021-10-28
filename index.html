@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/script/fakedatabase.js"></script>
+    <title>Order document</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    
+
+<div><h1 id="top">Order Confirmation</h1></div>
+<br>
+
+</head>
+
+<body>
+
+    <div><h2>Order number # <p id ="orderNumber" ></p> </h2></div>
+
+<table>
+    <!-- basic information that will always be shown -->
+<tr class="tableHead">
+    <th>
+        <p>Submitted</p>
+    </th>
+
+    <th>
+    <p>Processing</p>
+    </th>
+
+    <th>
+    <p>Fufilled</p>
+    </th>
+</tr>
+
+<!-- For the data represented in the table -->
+
+<tr>
+    <th>
+        <p id ="submitted" onclick="Move(this.id)"></p>
+    </th>
+
+    <th>
+    <p id ="processing" onclick="Move(this.id)"></p>
+    </th>
+
+    <th>
+    <p id ="fufilled"></p>
+    </th>
+</tr>
+
+<tr>
+    <th>
+        <p id = "submitted2" onclick="Move(this.id)"></p>
+    </th>
+
+    <th>
+    <p id= "processing2"onclick="Move(this.id)" ></p>
+    </th>
+
+    <th>
+    <p id= "fufilled2" ></p>
+    </th>
+</tr>
+
+</table>
+
+<!-- will allow for the order to be opned -->
+<div>
+<h2 id="text">Enter order number</h2>
+
+<form onsubmit="return false;">
+    <label for="fname">Order Number:</label>
+    <input type="text" id="orderNum" name="orderNum"><br><br>
+
+    <button onclick="CheckDB()">Submit</button>
+    <button onclick="Print()">Print</button>
+    <br>
+    <br>
+    <button onclick="updateClient()">Send To Client</button>
+</form>
+</div>
+
+<div class="clientinfo">
+<p> Client Information</p>
+<br>
+<p id="clientName"></p>
+<br>
+<p>Client Email</p>
+<br>
+<p id="clientEmail"></p>
+
+</div>
+
+
+
+<div ><p id="bar" >@support inc 2021</p></div>
+</body>
+</html>
